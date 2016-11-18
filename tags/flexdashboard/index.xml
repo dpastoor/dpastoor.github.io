@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devin Pastoor</title>
-    <link>http://devinpastoor.com/topics/development/index.xml</link>
+    <link>http://devinpastoor.com/tags/flexdashboard/index.xml</link>
     <description>Recent content on Devin Pastoor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2016, Devin Pastoor; all rights reserved.</copyright>
-    <atom:link href="http://devinpastoor.com/topics/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://devinpastoor.com/tags/flexdashboard/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ggvisualizer</title>
@@ -102,21 +102,6 @@ which will parse the chunks, inject html code including coloration, and strip th
 allowing the resulting rmarkdown to be knit.&lt;/p&gt;
 
 &lt;p&gt;Feel free to check it out, and leave comments if you&amp;rsquo;d like to contribute some plot(s) yourself!s&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Open Source</title>
-      <link>http://devinpastoor.com/post/what-every-open-source-project-needs/</link>
-      <pubDate>Fri, 18 Nov 2016 18:00:02 -0400</pubDate>
-      
-      <guid>http://devinpastoor.com/post/what-every-open-source-project-needs/</guid>
-      <description>&lt;p&gt;In the last few years open source has transformed the software industry. From
-Android to Wikipedia, open source is everywhere, but how does one succeed in
-it? While open source projects come in all shapes and sizes and all forms of
-governance, no matter what kind of project you’re a part of, there are a set of
-fundamentals that lead to success. I’d like to share some of the lessons I’ve
-learned&lt;/p&gt;
 </description>
     </item>
     

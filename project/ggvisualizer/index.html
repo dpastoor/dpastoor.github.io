@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="keywords" content="open source, development, ">
+<meta name="keywords" content="open source, development, R, rmarkdown, flexdashboard, ">
 
  
 <meta property="og:type" content="article"/>
@@ -30,6 +30,9 @@
 
 <meta property="article:tag" content="open source">
 <meta property="article:tag" content="development">
+<meta property="article:tag" content="R">
+<meta property="article:tag" content="rmarkdown">
+<meta property="article:tag" content="flexdashboard">
 
 
 
@@ -124,7 +127,93 @@
   <h1 itemprop="name" id="title">ggvisualizer</h1>
   <div>
         <article itemprop="articleBody" id="content">
-           <p>ggvisualizer</p>
+           <p>The purpose of this project was to create an interactive cookbook of Pharmacometric plots created with the popular R visualization library ggplot2 to increase efficiency
+and empower users to leverage the powerful customizations offered by ggplot2. Though the ggplot2 package is powerful and versatile, coding each plot can become tedious
+and remembering customizations can be difficult. Certain solutions have been proposed, but most involve &lsquo;cookbooks&rsquo; of premade plots flush with customizations. GGvisualizer
+acknowledges the iterative (including wrong interations!) nature of development, and offers a way of capturing the steps.</p>
+
+<p>The step-by-step differences provide insight into the specifics of how each snippet of code impacts the final plot, offering the ability to extend the examples to user-specific scenarios.
+The creation of the diffr package further extends this concept to users interested in creating their own examples, and addresses one of the biggest pain points of ggplot2 –
+finding and understanding the various customizations offered.</p>
+
+<p>Go check out some samples of the output at <a href="ggvisualizer">ggvisualizer</a></p>
+
+<p>Each ggvisualizer is made up of a couple key components:</p>
+
+<p>1.Users are presented with the final plot and a snippet of the data used to generate the plot, offering a reproducible final example to play with.<br />
+    
+<figure >
+    
+        <img src="/media/2016_11_18_ggvisualizer01.png"  />
+    
+    
+</figure>
+
+
+2. Users can use the L/R arrow keys to navigate around the dashboard, or click the arrows.
+    
+<figure >
+    
+        <img src="/media/2016_11_18_ggvisualizer02.png"  />
+    
+    
+</figure>
+
+
+3. &lsquo;Incorrect&rsquo; steps are also included, representing common missteps, allowing users in the same scenario to see what changes must be made to get to the correct spot.
+Changes between each step are shown, with red being code removed, and green, code added. To me, this is one of the most powerful learning resources, as it provides clear examples
+how to un-stick yourself when caught in the cycle of &ldquo;its not right, but I&rsquo;m not sure how to fix it&rdquo;.
+    
+<figure >
+    
+        <img src="/media/2016_11_18_ggvisualizer03.png"  />
+    
+    
+</figure>
+
+</p>
+
+<p>How are these made? It&rsquo;s <em>mostly</em> some light syntactic sugar on-top of <a href="http://rmarkdown.rstudio.com/">Rmarkdown</a> and <a href="http://rmarkdown.rstudio.com/flexdashboard/">flexdashboard</a></p>
+
+<p>A combination of the steps might look like:</p>
+
+<pre><code class="language-r">    ### step 3 - attempt to distinguish by gender via coloring
+
+    @start step3
+    ```{r }
+    ggplot(data = sd_oral_richpk, 
+    aes(x = Weight, group = Gender)) + 
+    geom_histogram(binwidth = 4, aes(color = Gender)) + 
+    labs(
+        x=&quot;Weight (kg)&quot;, 
+        y = &quot;Count&quot;) + 
+    base_theme()
+    ```
+    @end step3
+
+    ### step 4 - correct the color to use fill
+
+    @start step4
+    ```{r }
+    ggplot(data = sd_oral_richpk, 
+    aes(x = Weight, group = factor(Gender))) + 
+    geom_histogram(binwidth = 4, 
+        color = &quot;black&quot;, 
+        aes(fill = Gender)) + 
+    labs(
+        x=&quot;Weight (kg)&quot;, 
+        y = &quot;Count&quot;) + 
+    base_theme()
+    ```
+    @end step4
+    …
+</code></pre>
+
+<p>The decorators <code>@start</code> and <code>@end</code> delineate rmarkdown code chunks that should be diff’d. Currently, this is done by an experimental package, diffr (available at github.com/dpastoor/diffr),
+which will parse the chunks, inject html code including coloration, and strip the extra decorators, and add the necessary pieces to be a flexdashboard,
+allowing the resulting rmarkdown to be knit.</p>
+
+<p>Feel free to check it out, and leave comments if you&rsquo;d like to contribute some plot(s) yourself!s</p>
 
         </article>
   </div>
@@ -150,8 +239,8 @@
     <div>
         <section id="datecount">
           <h4 id="date"> Fri Nov 18, 2016 </h4>
-          <h5 id="wc"> 100 Words </h5>
-          <h5 id="readtime"> Read in about 1 Min </h5>
+          <h5 id="wc"> 500 Words </h5>
+          <h5 id="readtime"> Read in about 3 Min </h5>
         </section>
         <ul id="categories">
           
@@ -159,12 +248,20 @@
           
             <li><a href="http://devinpastoor.com//topics/open-source">Open Source</a> </li>
           
+            <li><a href="http://devinpastoor.com//topics/r">R</a> </li>
+          
         </ul>
         <ul id="tags">
           
             <li> <a href="http://devinpastoor.com//tags/open-source">open source</a> </li>
           
             <li> <a href="http://devinpastoor.com//tags/development">development</a> </li>
+          
+            <li> <a href="http://devinpastoor.com//tags/r">R</a> </li>
+          
+            <li> <a href="http://devinpastoor.com//tags/rmarkdown">rmarkdown</a> </li>
+          
+            <li> <a href="http://devinpastoor.com//tags/flexdashboard">flexdashboard</a> </li>
           
         </ul>
     </div>
@@ -192,7 +289,7 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="1">
+<meta itemprop="wordCount" content="481">
 <meta itemprop="datePublished" content="2016-11-18">
 <meta itemprop="url" content="http://devinpastoor.com/project/ggvisualizer/">
 
