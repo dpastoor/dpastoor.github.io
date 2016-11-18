@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project-rsses on Devin Pastoor</title>
+    <link>http://devinpastoor.com/project/index.xml</link>
+    <description>Recent content in Project-rsses on Devin Pastoor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2016, Devin Pastoor; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 18 Nov 2016 19:00:02 -0400</lastBuildDate>
+    <atom:link href="http://devinpastoor.com/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ggvisualizer</title>
+      <link>http://devinpastoor.com/project/ggvisualizer/</link>
+      <pubDate>Fri, 18 Nov 2016 19:00:02 -0400</pubDate>
+      
+      <guid>http://devinpastoor.com/project/ggvisualizer/</guid>
+      <description>&lt;p&gt;ggvisualizer&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
