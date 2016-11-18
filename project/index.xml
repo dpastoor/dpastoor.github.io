@@ -102,7 +102,9 @@ how to un-stick yourself when caught in the cycle of &amp;ldquo;its not right, b
 which will parse the chunks, inject html code including coloration, and strip the extra decorators, and add the necessary pieces to be a flexdashboard,
 allowing the resulting rmarkdown to be knit.&lt;/p&gt;
 
-&lt;p&gt;Feel free to check it out, and leave comments if you&amp;rsquo;d like to contribute some plot(s) yourself!s&lt;/p&gt;
+&lt;p&gt;Feel free to check it out, and leave comments if you&amp;rsquo;d like to contribute some plot(s) yourselves.&lt;/p&gt;
+
+&lt;p&gt;Finally, a special shoutout to Neha Mehta, who has been instrumental in brainstorming ideas and getting the initial plots created.&lt;/p&gt;
 </description>
     </item>
     
