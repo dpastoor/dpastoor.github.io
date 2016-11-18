@@ -1,0 +1,14 @@
+baseurl = "http://devinpastoor.com/"
+title = "Devin Pastoor"
+languageCode = "en-us"
+disqusShortname = "devinpastoor"
+copyright = "Copyright (c) 2016, Devin Pastoor; all rights reserved."
+MetaDataFormat = "yaml"
+
+[author]
+    name = "Devin Pastoor"
+
+[indexes]
+    tag = "tags"
+    topic = "topics"
+
