@@ -1,125 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Devin Pastoor</title>
-    <link>http://devinpastoor.com/topics/open-source/index.xml</link>
-    <description>Recent content on Devin Pastoor</description>
+    <title>Open Source on Devin Pastoor</title>
+    <link>https://dpastoor.github.io/topics/open-source/</link>
+    <description>Recent content in Open Source on Devin Pastoor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2016, Devin Pastoor; all rights reserved.</copyright>
-    <atom:link href="http://devinpastoor.com/topics/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Nov 2016 19:00:02 -0400</lastBuildDate>
+    
+	<atom:link href="https://dpastoor.github.io/topics/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>ggvisualizer</title>
-      <link>http://devinpastoor.com/project/ggvisualizer/</link>
+      <link>https://dpastoor.github.io/project/ggvisualizer/</link>
       <pubDate>Fri, 18 Nov 2016 19:00:02 -0400</pubDate>
       
-      <guid>http://devinpastoor.com/project/ggvisualizer/</guid>
-      <description>&lt;p&gt;The purpose of this project was to create an interactive cookbook of Pharmacometric plots created with the popular R visualization library ggplot2 to increase efficiency
-and empower users to leverage the powerful customizations offered by ggplot2. Though the ggplot2 package is powerful and versatile, coding each plot can become tedious
-and remembering customizations can be difficult. Certain solutions have been proposed, but most involve &amp;lsquo;cookbooks&amp;rsquo; of premade plots flush with customizations. GGvisualizer
-acknowledges the iterative (including wrong interations!) nature of development, and offers a way of capturing the steps.&lt;/p&gt;
-
-&lt;p&gt;The step-by-step differences provide insight into the specifics of how each snippet of code impacts the final plot, offering the ability to extend the examples to user-specific scenarios.
-The creation of the diffr package further extends this concept to users interested in creating their own examples, and addresses one of the biggest pain points of ggplot2 –
-finding and understanding the various customizations offered.&lt;/p&gt;
-
-&lt;p&gt;Go check out some samples of the output at &lt;a href=&#34;ggvisualizer&#34;&gt;ggvisualizer&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Each ggvisualizer is made up of a couple key components:&lt;/p&gt;
-
-&lt;p&gt;1.Users are presented with the final plot and a snippet of the data used to generate the plot, offering a reproducible final example to play with.&lt;br /&gt;
-    
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://devinpastoor.com/media/2016_11_18_ggvisualizer01.png&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-2. Users can use the L/R arrow keys to navigate around the dashboard, or click the arrows.
-    
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://devinpastoor.com/media/2016_11_18_ggvisualizer02.png&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-3. &amp;lsquo;Incorrect&amp;rsquo; steps are also included, representing common missteps, allowing users in the same scenario to see what changes must be made to get to the correct spot.
-Changes between each step are shown, with red being code removed, and green, code added. To me, this is one of the most powerful learning resources, as it provides clear examples
-how to un-stick yourself when caught in the cycle of &amp;ldquo;its not right, but I&amp;rsquo;m not sure how to fix it&amp;rdquo;.
-    
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://devinpastoor.com/media/2016_11_18_ggvisualizer03.png&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-&lt;/p&gt;
-
-&lt;p&gt;How are these made? It&amp;rsquo;s &lt;em&gt;mostly&lt;/em&gt; some light syntactic sugar on-top of &lt;a href=&#34;http://rmarkdown.rstudio.com/&#34;&gt;Rmarkdown&lt;/a&gt; and &lt;a href=&#34;http://rmarkdown.rstudio.com/flexdashboard/&#34;&gt;flexdashboard&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A combination of the steps might look like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;    ### step 3 - attempt to distinguish by gender via coloring
-
-    @start step3
-    ```{r }
-    ggplot(data = sd_oral_richpk, 
-    aes(x = Weight, group = Gender)) + 
-    geom_histogram(binwidth = 4, aes(color = Gender)) + 
-    labs(
-        x=&amp;quot;Weight (kg)&amp;quot;, 
-        y = &amp;quot;Count&amp;quot;) + 
-    base_theme()
-    ```
-    @end step3
-
-    ### step 4 - correct the color to use fill
-
-    @start step4
-    ```{r }
-    ggplot(data = sd_oral_richpk, 
-    aes(x = Weight, group = factor(Gender))) + 
-    geom_histogram(binwidth = 4, 
-        color = &amp;quot;black&amp;quot;, 
-        aes(fill = Gender)) + 
-    labs(
-        x=&amp;quot;Weight (kg)&amp;quot;, 
-        y = &amp;quot;Count&amp;quot;) + 
-    base_theme()
-    ```
-    @end step4
-    …
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The decorators &lt;code&gt;@start&lt;/code&gt; and &lt;code&gt;@end&lt;/code&gt; delineate rmarkdown code chunks that should be diff’d. Currently, this is done by an experimental package, diffr (available at github.com/dpastoor/diffr),
-which will parse the chunks, inject html code including coloration, and strip the extra decorators, and add the necessary pieces to be a flexdashboard,
-allowing the resulting rmarkdown to be knit.&lt;/p&gt;
-
-&lt;p&gt;Feel free to check it out, at &lt;a href=&#34;ggvisualizer&#34;&gt;ggvisualizer&lt;/a&gt;, and leave comments if you&amp;rsquo;d like to contribute some plot(s) yourselves.&lt;/p&gt;
-
-&lt;p&gt;Finally, a special shoutout to Neha Mehta, who has been instrumental in brainstorming ideas and getting the initial plots created.&lt;/p&gt;
-</description>
+      <guid>https://dpastoor.github.io/project/ggvisualizer/</guid>
+      <description>The purpose of this project was to create an interactive cookbook of Pharmacometric plots created with the popular R visualization library ggplot2 to increase efficiency and empower users to leverage the powerful customizations offered by ggplot2. Though the ggplot2 package is powerful and versatile, coding each plot can become tedious and remembering customizations can be difficult. Certain solutions have been proposed, but most involve &amp;lsquo;cookbooks&amp;rsquo; of premade plots flush with customizations.</description>
     </item>
     
     <item>
       <title>Getting Started with Open Source</title>
-      <link>http://devinpastoor.com/post/what-every-open-source-project-needs/</link>
+      <link>https://dpastoor.github.io/post/what-every-open-source-project-needs/</link>
       <pubDate>Fri, 18 Nov 2016 18:00:02 -0400</pubDate>
       
-      <guid>http://devinpastoor.com/post/what-every-open-source-project-needs/</guid>
-      <description>&lt;p&gt;In the last few years open source has transformed the software industry. From
-Android to Wikipedia, open source is everywhere, but how does one succeed in
-it? While open source projects come in all shapes and sizes and all forms of
-governance, no matter what kind of project you’re a part of, there are a set of
-fundamentals that lead to success. I’d like to share some of the lessons I’ve
-learned&amp;hellip;To be continued&amp;hellip;.&lt;/p&gt;
-</description>
+      <guid>https://dpastoor.github.io/post/what-every-open-source-project-needs/</guid>
+      <description>In the last few years open source has transformed the software industry. From Android to Wikipedia, open source is everywhere, but how does one succeed in it? While open source projects come in all shapes and sizes and all forms of governance, no matter what kind of project you’re a part of, there are a set of fundamentals that lead to success. I’d like to share some of the lessons I’ve learned&amp;hellip;To be continued&amp;hellip;.</description>
     </item>
     
   </channel>

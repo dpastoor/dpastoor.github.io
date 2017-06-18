@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Devin Pastoor</title>
-    <link>http://devinpastoor.com/post/index.xml</link>
-    <description>Recent content in Post-rsses on Devin Pastoor</description>
+    <title>Posts on Devin Pastoor</title>
+    <link>https://dpastoor.github.io/post/</link>
+    <description>Recent content in Posts on Devin Pastoor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2016, Devin Pastoor; all rights reserved.</copyright>
     <lastBuildDate>Fri, 18 Nov 2016 18:00:02 -0400</lastBuildDate>
-    <atom:link href="http://devinpastoor.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://dpastoor.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Getting Started with Open Source</title>
-      <link>http://devinpastoor.com/post/what-every-open-source-project-needs/</link>
+      <link>https://dpastoor.github.io/post/what-every-open-source-project-needs/</link>
       <pubDate>Fri, 18 Nov 2016 18:00:02 -0400</pubDate>
       
-      <guid>http://devinpastoor.com/post/what-every-open-source-project-needs/</guid>
-      <description>&lt;p&gt;In the last few years open source has transformed the software industry. From
-Android to Wikipedia, open source is everywhere, but how does one succeed in
-it? While open source projects come in all shapes and sizes and all forms of
-governance, no matter what kind of project you’re a part of, there are a set of
-fundamentals that lead to success. I’d like to share some of the lessons I’ve
-learned&amp;hellip;To be continued&amp;hellip;.&lt;/p&gt;
-</description>
+      <guid>https://dpastoor.github.io/post/what-every-open-source-project-needs/</guid>
+      <description>In the last few years open source has transformed the software industry. From Android to Wikipedia, open source is everywhere, but how does one succeed in it? While open source projects come in all shapes and sizes and all forms of governance, no matter what kind of project you’re a part of, there are a set of fundamentals that lead to success. I’d like to share some of the lessons I’ve learned&amp;hellip;To be continued&amp;hellip;.</description>
     </item>
     
   </channel>

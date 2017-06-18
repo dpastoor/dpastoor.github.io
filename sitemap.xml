@@ -1,19 +1,93 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://devinpastoor.com/</loc>
+    <loc>https://dpastoor.github.io/project/ggvisualizer/</loc>
     <lastmod>2016-11-18T19:00:02-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://devinpastoor.com/project/ggvisualizer/</loc>
-    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://devinpastoor.com/post/what-every-open-source-project-needs/</loc>
+    <loc>https://dpastoor.github.io/post/what-every-open-source-project-needs/</loc>
     <lastmod>2016-11-18T18:00:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/tags/development/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/topics/development/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/tags/flexdashboard/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/tags/open-source/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/topics/open-source/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/post/</loc>
+    <lastmod>2016-11-18T18:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/project/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/tags/r/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/topics/r/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/tags/rmarkdown/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/tags/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpastoor.github.io/topics/</loc>
+    <lastmod>2016-11-18T19:00:02-04:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

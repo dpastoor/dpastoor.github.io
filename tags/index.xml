@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Devin Pastoor</title>
+    <link>https://dpastoor.github.io/tags/</link>
+    <description>Recent content in Tags on Devin Pastoor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2016, Devin Pastoor; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 18 Nov 2016 19:00:02 -0400</lastBuildDate>
+    
+	<atom:link href="https://dpastoor.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development</title>
+      <link>https://dpastoor.github.io/tags/development/</link>
+      <pubDate>Fri, 18 Nov 2016 19:00:02 -0400</pubDate>
+      
+      <guid>https://dpastoor.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flexdashboard</title>
+      <link>https://dpastoor.github.io/tags/flexdashboard/</link>
+      <pubDate>Fri, 18 Nov 2016 19:00:02 -0400</pubDate>
+      
+      <guid>https://dpastoor.github.io/tags/flexdashboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://dpastoor.github.io/tags/open-source/</link>
+      <pubDate>Fri, 18 Nov 2016 19:00:02 -0400</pubDate>
+      
+      <guid>https://dpastoor.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://dpastoor.github.io/tags/r/</link>
+      <pubDate>Fri, 18 Nov 2016 19:00:02 -0400</pubDate>
+      
+      <guid>https://dpastoor.github.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rmarkdown</title>
+      <link>https://dpastoor.github.io/tags/rmarkdown/</link>
+      <pubDate>Fri, 18 Nov 2016 19:00:02 -0400</pubDate>
+      
+      <guid>https://dpastoor.github.io/tags/rmarkdown/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
